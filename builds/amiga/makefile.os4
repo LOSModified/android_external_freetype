@@ -57,7 +57,7 @@ WARNINGS = -Wall -W -Wundef -Wpointer-arith -Wbad-function-cast \
 	   -Waggregate-return -Wwrite-strings -Wshadow
 
 OPTIONS  = -DFT2_BUILD_LIBRARY -DNDEBUG -fno-builtin
-OPTIMIZE = -O2 -fomit-frame-pointer -fstrength-reduce -finline-functions
+OPTIMIZE = -O3 -fomit-frame-pointer -fstrength-reduce -finline-functions
 
 CFLAGS   = -mcrt=clib2 $(DIRFLAGS) $(WARNINGS) $(FT2FLAGS) $(OPTIONS) $(OPTIMIZE)
 
